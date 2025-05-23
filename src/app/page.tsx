@@ -16,7 +16,7 @@ export default function Home() {
             </h1>
             <p className="text-dark fs-18">
               Use professional field-tested resume templates that follow the exact
-              'resume rules' employers look for. Easy to use and done within
+              resume rules employers look for. Easy to use and done within
               minutes - try now for free!
             </p>
             <Link
@@ -55,7 +55,7 @@ export default function Home() {
                 Use the best resume maker as your guide!
               </h2>
               <p className="text">
-                Getting that dream job can seem like an impossible task. We're
+                Getting that dream job can seem like an impossible task. We are
                 here to change that. Give yourself a real advantage with the best
                 online resume maker: created by experts, improved by data,
                 trusted by millions of professionals.
@@ -156,15 +156,15 @@ export default function Home() {
         </div>
       </footer>
 
-      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-      <df-messenger
+      {/* <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script> */}
+      {/* <df-messenger
         intent="WELCOME"
         chat-title="Resume-Builder"
-        chat-icon="https://img.icons8.com/?size=50&id=23882&format=png"
+        chat-icon="/images/download.png"
         chat-icon="https://image.icons8.com/?size=50&id=23882&format=png"
         agent-id="9bc97b06-e323-4936-a001-a5f7b1634b2c"
         language-code="en"
-      ></df-messenger>
+      ></df-messenger> */}
     </>
   );
 }
