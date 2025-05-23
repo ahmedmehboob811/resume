@@ -160,7 +160,7 @@ export default function Home() {
       <df-messenger
         intent="WELCOME"
         chat-title="Resume-Builder"
-        chat-icon="/images/download.png"
+        chat-icon="https://img.icons8.com/?size=50&id=23882&format=png"
         chat-icon="https://image.icons8.com/?size=50&id=23882&format=png"
         agent-id="9bc97b06-e323-4936-a001-a5f7b1634b2c"
         language-code="en"
