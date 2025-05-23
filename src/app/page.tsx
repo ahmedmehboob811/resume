@@ -1,101 +1,186 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <nav className="navbar bg-white">
+        <div className="container">
+          <div className="navbar-content">
+            <div className="brand-and-toggler">
+              <button type="button" className="navbar-toggler-btn">
+                <div className="bars">
+                  <div className="bar"></div>
+                  <div className="bar"></div>
+                  <div className="bar"></div>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </nav>
+
+      <header className="header bg-bright" id="header">
+        <div className="container">
+          <div className="header-content text-center">
+            <h6 className="text-uppercase text-blue-dark fs-14 fw-6 ls-1">
+              online resume builder
+            </h6>
+            <h1 className="lg-title">
+              Only 2% of resumes make it past the first round. Be in the top 2%
+            </h1>
+            <p className="text-dark fs-18">
+              Use professional field-tested resume templates that follow the exact
+              'resume rules' employers look for. Easy to use and done within
+              minutes - try now for free!
+            </p>
+            <Link
+              href="/resume"
+              className="btn btn-primary text-uppercase"
+              aria-label="Create my resume"
+            >
+              create my resume
+            </Link>
+            {/* Uncomment when you have the actual image */}
+            {/* <Image 
+              src="/images/dublin-resume-templates.avif" 
+              alt="Resume templates example"
+              width={800}
+              height={500}
+              priority
+            /> */}
+          </div>
+        </div>
+      </header>
+
+      <div className="section-one">
+        <div className="container">
+          <div className="section-one-content">
+            <div className="section-one-l">
+              {/* Uncomment when you have the actual image */}
+              {/* <Image 
+                src="/images/visual-0c7080adf17f1f207276f613447c924f667dab34b7ac415cd7ef653172defd0b.svg" 
+                alt="Resume builder illustration"
+                width={500}
+                height={400}
+              /> */}
+            </div>
+            <div className="section-one-r text-center">
+              <h2 className="lg-title">
+                Use the best resume maker as your guide!
+              </h2>
+              <p className="text">
+                Getting that dream job can seem like an impossible task. We're
+                here to change that. Give yourself a real advantage with the best
+                online resume maker: created by experts, improved by data,
+                trusted by millions of professionals.
+              </p>
+              <div className="btn-group">
+                <Link
+                  href="/resume"
+                  className="btn btn-primary text-uppercase"
+                  aria-label="Create my resume"
+                >
+                  create my resume
+                </Link>
+                <button
+                  className="btn btn-secondary text-uppercase"
+                  aria-label="Watch video"
+                >
+                  watch video
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section-two bg-bright">
+        <div className="container">
+          <div className="section-two-content">
+            <div className="section-items">
+              <div className="section-item">
+                <div className="section-item-icon">
+                  {/* <Image 
+                    src="/images/feature-1-edf4481d69166ac81917d1e40e6597c8d61aa970ad44367ce78049bf830fbda5.svg" 
+                    alt="Interview winning icon"
+                    width={80}
+                    height={80}
+                  /> */}
+                </div>
+                <h5 className="section-item-title">
+                  Make a resume that wins interviews!
+                </h5>
+                <p className="text">
+                  Use our resume maker with its advanced creation tools to tell a
+                  professional story that engages recruiters, hiring managers and
+                  even CEOs.
+                </p>
+              </div>
+
+              <div className="section-item">
+                <div className="section-item-icon">
+                  {/* <Image 
+                    src="/images/feature-2-a7a471bd973c02a55d1b3f8aff578cd3c9a4c5ac4fc74423d94ecc04aef3492b.svg" 
+                    alt="Easy writing icon"
+                    width={80}
+                    height={80}
+                  /> */}
+                </div>
+                <h5 className="section-item-title">
+                  Resume writing made easy!
+                </h5>
+                <p className="text">
+                  Resume writing has never been this effortless. Pre-generated
+                  text, visual designs and more - all already integrated into
+                  the resume maker. Just fill in your details.
+                </p>
+              </div>
+
+              <div className="section-item">
+                <div className="section-item-icon">
+                  {/* <Image 
+                    src="/images/feature-3-4e87a82f83e260488c36f8105e26f439fdc3ee5009372bb5e12d9421f32eabdd.svg" 
+                    alt="Recruiter tested icon"
+                    width={80}
+                    height={80}
+                  /> */}
+                </div>
+                <h5 className="section-item-title">
+                  A recruiter-tested CV maker tool
+                </h5>
+                <p className="text">
+                  Our resume builder and its pre-generated content are tested by
+                  recruiters and IT experts. We help your CV become truly
+                  competitive in the hiring process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer className="footer bg-dark">
+        <div className="container">
+          <div className="footer-content text-center">
+            <p className="fs-15">
+              &copy;Copyright {new Date().getFullYear()}. All Rights Reserved -{" "}
+              <span>build.resume</span>
+            </p>
+          </div>
+        </div>
       </footer>
-    </div>
+
+      {/* Uncomment when you have Dialogflow configured */} */}
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+      <df-messenger
+        intent="WELCOME"
+        chat-title="Resume-Builder"
+        chat-icon="/images/download.png"
+        chat-icon="https://image.icons8.com/?size=50&id=23882&format=png"
+        agent-id="9bc97b06-e323-4936-a001-a5f7b1634b2c"
+        language-code="en"
+      ></df-messenger>
+    </>
   );
 }
