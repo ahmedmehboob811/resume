@@ -4,26 +4,11 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <nav className="navbar bg-white">
-        <div className="container">
-          <div className="navbar-content">
-            <div className="brand-and-toggler">
-              <button type="button" className="navbar-toggler-btn">
-                <div className="bars">
-                  <div className="bar"></div>
-                  <div className="bar"></div>
-                  <div className="bar"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+  
       <header className="header bg-bright" id="header">
         <div className="container">
-          <div className="header-content text-center">
-            <h6 className="text-uppercase text-blue-dark fs-14 fw-6 ls-1">
+          <div className="header-content text-center p-16">
+            <h6 className="text-uppercase text-blue-dark fs-14 fw-6 ls-1 ">
               online resume builder
             </h6>
             <h1 className="lg-title">
@@ -41,14 +26,14 @@ export default function Home() {
             >
               create my resume
             </Link>
-            {/* Uncomment when you have the actual image */}
-            {/* <Image 
+            {/* Uncomment when you have the actual image */} 
+             <Image 
               src="/images/dublin-resume-templates.avif" 
               alt="Resume templates example"
               width={800}
               height={500}
               priority
-            /> */}
+            />
           </div>
         </div>
       </header>
@@ -58,12 +43,12 @@ export default function Home() {
           <div className="section-one-content">
             <div className="section-one-l">
               {/* Uncomment when you have the actual image */}
-              {/* <Image 
+               <Image 
                 src="/images/visual-0c7080adf17f1f207276f613447c924f667dab34b7ac415cd7ef653172defd0b.svg" 
                 alt="Resume builder illustration"
                 width={500}
                 height={400}
-              /> */}
+              /> 
             </div>
             <div className="section-one-r text-center">
               <h2 className="lg-title">
@@ -101,12 +86,12 @@ export default function Home() {
             <div className="section-items">
               <div className="section-item">
                 <div className="section-item-icon">
-                  {/* <Image 
+                   <Image 
                     src="/images/feature-1-edf4481d69166ac81917d1e40e6597c8d61aa970ad44367ce78049bf830fbda5.svg" 
                     alt="Interview winning icon"
                     width={80}
                     height={80}
-                  /> */}
+                  /> 
                 </div>
                 <h5 className="section-item-title">
                   Make a resume that wins interviews!
@@ -120,12 +105,12 @@ export default function Home() {
 
               <div className="section-item">
                 <div className="section-item-icon">
-                  {/* <Image 
+                   <Image 
                     src="/images/feature-2-a7a471bd973c02a55d1b3f8aff578cd3c9a4c5ac4fc74423d94ecc04aef3492b.svg" 
                     alt="Easy writing icon"
                     width={80}
                     height={80}
-                  /> */}
+                  /> 
                 </div>
                 <h5 className="section-item-title">
                   Resume writing made easy!
@@ -139,12 +124,12 @@ export default function Home() {
 
               <div className="section-item">
                 <div className="section-item-icon">
-                  {/* <Image 
+                 <Image 
                     src="/images/feature-3-4e87a82f83e260488c36f8105e26f439fdc3ee5009372bb5e12d9421f32eabdd.svg" 
                     alt="Recruiter tested icon"
                     width={80}
                     height={80}
-                  /> */}
+                  /> 
                 </div>
                 <h5 className="section-item-title">
                   A recruiter-tested CV maker tool
@@ -171,7 +156,6 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Uncomment when you have Dialogflow configured */} */}
       <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
       <df-messenger
         intent="WELCOME"
