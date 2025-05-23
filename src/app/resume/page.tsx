@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import Image from "next/image";
 import { useState } from 'react';
 
 interface Achievement {
@@ -716,7 +717,7 @@ export default function Resume() {
               <div className="preview-blk">
                 <div className="preview-image">
                   {formData.image && (
-                    <img 
+                    <Image
                       src={URL.createObjectURL(formData.image)} 
                       alt="Profile" 
                       id="image_dsp" 
