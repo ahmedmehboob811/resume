@@ -201,22 +201,7 @@ export default function Resume() {
 
   return (
     <>
-      <nav className="navbar bg-white">
-        <div className="container">
-          <div className="navbar-content">
-            <div className="brand-and-toggler">
-              <button type="button" className="navbar-toggler-btn">
-                <div className="bars">
-                  <div className="bar"></div>
-                  <div className="bar"></div>
-                  <div className="bar"></div>
-                </div>
-                <Link href="/">Back</Link>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+   <Link href="/"></Link>
 
       <section id="about-sc" className="">
         <div className="container">
